@@ -29,14 +29,14 @@ class MyApp extends StatelessWidget {
                   value: 0,
                   child: Text(
                     "Vision",
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
                 PopupMenuItem<int>(
                   value: 1,
                   child: Text(
                     "About Department",
-                    style: TextStyle(color: Colors.black),
+                    style: TextStyle(color: Colors.white),
                   ),
                 ),
               ],
@@ -183,6 +183,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Welcome To BI Lab'),
+          scrollable: true,
           content: Column(
             children: [
               Image.network(
@@ -197,8 +198,11 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
                 ),
               ),
-              Text(
-                  "1)Identify sources of Data for mining and perform data exploration. \n2)Organize and prepare the data needed for data mining algorithms in terms of attributes and class inputs, training, validating, and testing files \n3)Implement the appropriate data mining methods like classification, clustering or association mining on large data sets using open-source tools like WEKA \n4)Implement various data mining algorithms from scratch using languages like Python/ Java etc. \n5)Evaluate and compare performance of some available BI packages \n6)Apply BI to solve practical problems: Analyze the problem domain, use the data collected in enterprise apply the appropriate data mining technique, interpret and visualize the results and provide decision support"),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 150.0),
+                child: Text(
+                    "1)Identify sources of Data for mining and perform data exploration. \n2)Organize and prepare the data needed for data mining algorithms in terms of attributes and class inputs, training, validating, and testing files \n3)Implement the appropriate data mining methods like classification, clustering or association mining on large data sets using open-source tools like WEKA \n4)Implement various data mining algorithms from scratch using languages like Python/ Java etc. \n5)Evaluate and compare performance of some available BI packages \n6)Apply BI to solve practical problems: Analyze the problem domain, use the data collected in enterprise apply the appropriate data mining technique, interpret and visualize the results and provide decision support"),
+              ),
             ],
           ),
           actions: <Widget>[
@@ -217,6 +221,7 @@ class MyApp extends StatelessWidget {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
+          scrollable: true,
           title: Text('Welcome To MAD and PWA Lab'),
           content: Column(
             children: [
@@ -232,8 +237,11 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
                 ),
               ),
-              Text(
-                  "1)Learn the basics of the Flutter framework. \n2)Develop the App UI by incorporating widgets, layouts, gestures and animation \n3)Create a production ready Flutter App by including files and firebase backend service. \n4)Learn the Essential technologies, and Concepts of PWAs to get started as quickly and efficiently as possible \n5)Develop responsive web applications by combining AJAX development techniques with the jQuery JavaScript library. \n6)Understand how service workers operate and also learn to Test and Deploy PWA."),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal:150.0),
+                child: Text(
+                    "1)Learn the basics of the Flutter framework. \n2)Develop the App UI by incorporating widgets, layouts, gestures and animation \n3)Create a production ready Flutter App by including files and firebase backend service. \n4)Learn the Essential technologies, and Concepts of PWAs to get started as quickly and efficiently as possible \n5)Develop responsive web applications by combining AJAX development techniques with the jQuery JavaScript library. \n6)Understand how service workers operate and also learn to Test and Deploy PWA."),
+              ),
             ],
           ),
           actions: <Widget>[
@@ -253,6 +261,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text('Welcome To Sensor Lab'),
+          scrollable: true,
           content: Column(
             children: [
               Image.asset(
