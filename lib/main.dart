@@ -59,50 +59,53 @@ class MyApp extends StatelessWidget {
                   // fit: BoxFit.contain,
                   // height: 200,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: RaisedButton(
-                        child: Text('Web Lab'),
-                        padding: EdgeInsets.all(20),
-                        color: Colors.blue,
-                        textColor: Colors.white,
-                        onPressed: () => LAB1(context),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 30.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: RaisedButton(
+                          child: Text('Web Lab'),
+                          padding: EdgeInsets.all(20),
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          onPressed: () => LAB1(context),
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: RaisedButton(
-                        child: Text('BI Lab'),
-                        padding: EdgeInsets.all(20),
-                        color: Colors.blue,
-                        textColor: Colors.white,
-                        onPressed: () => LAB2(context),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: RaisedButton(
+                          child: Text('BI Lab'),
+                          padding: EdgeInsets.all(20),
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          onPressed: () => LAB2(context),
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: RaisedButton(
-                        child: Text('MAD and PWA Lab'),
-                        padding: EdgeInsets.all(20),
-                        color: Colors.blue,
-                        textColor: Colors.white,
-                        onPressed: () => LAB3(context),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: RaisedButton(
+                          child: Text('MAD and PWA Lab'),
+                          padding: EdgeInsets.all(20),
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          onPressed: () => LAB3(context),
+                        ),
                       ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: RaisedButton(
-                        child: Text('Sensor Lab'),
-                        padding: EdgeInsets.all(20),
-                        color: Colors.blue,
-                        textColor: Colors.white,
-                        onPressed: () => LAB4(context),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: RaisedButton(
+                          child: Text('Sensor Lab'),
+                          padding: EdgeInsets.all(20),
+                          color: Colors.blue,
+                          textColor: Colors.white,
+                          onPressed: () => LAB4(context),
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
